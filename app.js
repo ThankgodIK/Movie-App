@@ -19,7 +19,7 @@ const getMovieInfo = async (e) => {
 
   try {
     const data = await fetch(
-      `http://www.omdbapi.com/?apikey=5d93e14&t=${movieTitle}`
+      `https://www.omdbapi.com/?apikey=5d93e14&t=${movieTitle}`
     );
     const movieInfo = await data.json();
     console.log(movieInfo);
